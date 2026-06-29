@@ -25,3 +25,18 @@ replay_pid*
 
 # IDEA
 .idea/
+
+# Eclipse IDE
+.classpath
+.factorypath
+.project
+.settings/
+
+# Maven build output
+target/
+
+# Persistence config with credentials
+src/main/resources/META-INF/persistence.xml
+
+# Application properties with credentials
+src/main/resources/application.properties
