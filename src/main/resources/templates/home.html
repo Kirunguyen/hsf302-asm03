@@ -1,0 +1,56 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SEAL Hackathon Portal</title>
+    <link
+      rel="stylesheet"
+      th:href="@{/bootstrap-4.5.3-dist/css/bootstrap.min.css}"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="/">SEAL Portal</a>
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">Home</a>
+        <a class="nav-item nav-link" href="/awards">Awards Management</a>
+        <a class="nav-item nav-link" href="/reports">Reports Management</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">SEAL Hackathon Portal</h1>
+        <p class="lead">Reporting & Awards Management Module.</p>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Awards Management</h5>
+                <p class="card-text">
+                  View list of awards, assign awards to teams, and edit or
+                  revoke existing awards.
+                </p>
+                <a href="/awards" class="btn btn-primary">Go to Awards</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Reporting Engine</h5>
+                <p class="card-text">
+                  Generate comprehensive analytics reports summarizing teams,
+                  members, rankings and award assignments.
+                </p>
+                <a href="/reports" class="btn btn-success">Go to Reports</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
